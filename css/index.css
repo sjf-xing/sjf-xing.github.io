@@ -1043,9 +1043,10 @@ kbd {
   height: 120px;
 }
 .sidebar-ov-author__avatar_img {
-  opacity: 1;
-  -ms-filter: none;
-  filter: none;
+  opacity: 0.9;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  filter: alpha(opacity=90);
+  border-radius: 50%;
 }
 .sidebar-ov-author__avatar:hover .sidebar-ov-author__avatar_img {
   -webkit-animation: avatar-turn 0.8s both ease-out;
